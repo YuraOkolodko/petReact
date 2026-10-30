@@ -1,6 +1,7 @@
 ### Stage 1
-1. Runtime: Node 26
-2. Package manager: pnpm 10
+
+1. Runtime: Node 26 local per-repository setup config through pnpm
+2. Package manager: pnpm 12
 3. Language: TypeScript 5, strict ESM
 4. Lint/Format: Biome 2
 5. Build: Vite 8 (Rolldown)
@@ -13,6 +14,7 @@
 12. API Client: native fetch + use() + Suspense
 
 ### Stage 2
+
 1. Unit tests: Vitest
 2. E2E tests: Playwright
 3. Container: Caddy / Plaform build pack / Static hosting (not decided yet)

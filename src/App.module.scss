@@ -1,0 +1,21 @@
+$primary-color: #0070f3;
+$bg-color: #f4f6f8;
+
+.container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: $bg-color;
+  border-radius: 8px;
+  font-family: system-ui, -apple-system, sans-serif;
+
+  h1 {
+    color: $primary-color;
+    margin-bottom: 0.5rem;
+  }
+
+  p {
+    color: #444;
+    line-height: 1.6;
+  }
+}
