@@ -725,7 +725,7 @@ declare module "*.module.css" {
 }
 ```
 
-1. **Create `src/App.module.scss`**:
+1. **Create `src/pages/DemoPage.module.scss`**:
 
 ```scss
 
@@ -835,7 +835,7 @@ export function AboutPage() {
 ```tsx
 import {BrowserRouter, Routes, Route, Link} from "react-router-dom";
 import {HomePage} from "./pages/HomePage";
-import {AboutPage} from "./pages/AboutPage";
+import {AboutPage} from "./pages/AboutPage.tsx";
 import styles from "./App.module.scss";
 
 export function App() {
@@ -1106,7 +1106,7 @@ identically to the development version.
    In `src/main.tsx`, we wrapped `<App />` with `<StrictMode>`. In development, React intentionally mounts components
    twice to help identify accidental side effects. This does not happen in production builds.
 4. **SCSS Module Names**:
-   SCSS files intended for modular hashing must be named with the `.module.scss` suffix (e.g., `App.module.scss`),
+   SCSS files intended for modular hashing must be named with the `.module.scss` suffix (e.g., `DemoPage.module.scss`),
    otherwise Vite treats them as global stylesheets.
 
 ### What comes next in Stage 2?
